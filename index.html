@@ -21,7 +21,7 @@
 
 <!--/ fonts -->
 <!-- scripts to be load first -->
-
+<script language="JavaScript" src="evaluator.js"></script>
 <!--/ scripts to be load first -->
 
 
@@ -32,51 +32,60 @@
 <br>
 <a href="">F.A.Q. </a>
 <h3> To evaluate the capacity of possession of the team, the software will need several responses. 
-There will be three parts: 1) Players stats; 2) Coach stats; 3) Team stats. 
+There will be two parts: 1) Players stats; 2) Coach stats.
 </h3>
-<h4> First part: Player stats </h4>
-<p> Enter the name and the stats of each player </p>
 
-<form>
+<form id="playerPart">
+<h4> First part: Player stats </h4>
+<p> Enter the name and the stats of each player </p><br>
   <p>Player name:<p>
-  <input type="text" name="playerName" value="" id="playerName" required><br>
+  <input type="text" name="playerName" id="playerName" required><br>
   <p>Accuracy in short passes (%)</p>
-  <input type="number" name="accuracyShortPasses" id="accuracyShortPasses" value="" min="0" max="100"><br>
+  <input type="number" name="accuracyShortPasses" id="accuracyShortPasses"  min="0" max="100" required><br>
   <p>Accuracy in long passes (%) </p>
-  <input type="number" name="accuracyLongPasses" id="accuracyLongPasses" value="" min="0" max="100"><br>
+  <input type="number" name="accuracyLongPasses" id="accuracyLongPasses"  min="0" max="100" required><br>
   <p>Accuracy in take-ons (%) </p>
-  <input type="number" name="accuracyTakeOns" id="accuracyLongPasses" value="" min="0" max="100"><br>
+  <input type="number" name="accuracyTakeOns" id="accuracyTakeOns" " min="0" max="100" required><br>
   
-  <P>This player use to get close of other partners to help then in the pass process? </p>
-  <div class="radioButtons">
-  <input type="radio" name="helpMove" value="yes" checked> Yes <br>
-  <input type="radio" name="helpMove" value="no"> No <br>
-  <input type="radio" name="helpMove" value="sometimes"> Sometimes <br><br>
-  </div>
+  <P>This player use to play next to his/her teammates and help them in the teamwork passing? </p>
+  <ul>
+  <li><input type="radio" name="helpMove" value="yes" checked> Yes <br></li>
+  <li><input type="radio" name="helpMove" value="no"> No <br></li>
+  <li><input type="radio" name="helpMove" value="sometimes"> Sometimes <br><br></li>
+  </ul>
   
   <P>This player has a good capacity of changing of direction? </p>
-  <div class="radioButtons">
-  <input type="radio" name="helpMove" value="yes" checked> Yes <br>
-  <input type="radio" name="helpMove" value="no"> No <br>
-  <input type="radio" name="helpMove" value="sometimes"> Somewhat <br><br>
-  </div>
+  <ul>
+  <li><input type="radio" name="changeDirection" value="yes" checked> Yes <br></li>
+  <li><input type="radio" name="changeDirection" value="no"> No <br></li>
+  <li><input type="radio" name="changeDirection" value="sometimes"> Somewhat <br><br></li>
+  </ul>
   
   <P>This player has a good capacity to shield the ball and resist the adversary's pressing? </p>
-  <div class="radioButtons">
-  <input type="radio" name="shieldAndResist" value="yes" checked> Yes <br>
-  <input type="radio" name="shieldAndResist" value="no"> No <br>
-  <input type="radio" name="shieldAndResist" value="sometimes"> Somewhat <br><br>
-  </div>
+  <ul>
+  <li><input type="radio" name="shieldAndResist" value="yes" checked> Yes <br></li>
+  <li><input type="radio" name="shieldAndResist" value="no"> No <br></li>
+  <li><input type="radio" name="shieldAndResist" value="sometimes"> Somewhat <br><br></li>
+  </ul>
   
-    <P>This player has a good ball handle? </p>
-  <div class="radioButtons">
-  <input type="radio" name="ballHandle" value="yes" checked> Yes <br>
-  <input type="radio" name="ballHandle" value="no"> No <br>
-  <input type="radio" name="ballHandle" value="sometimes"> Somewhat <br><br>
-  </div>
-  <input type="submit" value="Submit">
-</form>
+    <P>This player has a good ball handling? </p>
+  <ul>
+  <li><input type="radio" name="ballHandle" value="yes" checked> Yes <br></li>
+  <li><input type="radio" name="ballHandle" value="no"> No <br></li>
+  <li><input type="radio" name="ballHandle" value="sometimes"> Somewhat <br><br></li>
+  </ul>
+  
+  
+  <h4> Second part: Coach stats </h4>
+<p> Enter the name and the stats of the most recent team mannaged by the coach </p><br>
 
+	<p>Coach name:<p>
+    <input type="text" name="coachName"  id="playerName" required><br>
+	<p> What is the Possession percentage of the most recent team mannaged by the coach? </p>
+	<input type="number" name="possessionPorcentageTeam" id="possessionPorcentageTeam" value="" min="0" max="100" required><br><br>
+	
+	<input type="submit" value="Submit" onclick="fpce()">
+</form>
 
 
 
