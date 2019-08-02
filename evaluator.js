@@ -1,15 +1,48 @@
-var playersNames = [];
+var players = [];
 var playersPossessionNumber; //player possession number is the number that represents the sum and pairy of the stats.
 
-function fpce(){
-	var playerName, accuracyShortPasses, accuracyLongPasses, accuracyTakeOns, helpMove, changeDirection, shieldAndResist, ballHandle, coachName, possessionPorcentageTeam;
+function addPlayerStats(){
+	var playerName, accuracyShortPasses, accuracyLongPasses, accuracyTakeOns, helpMoveGet, helpMove, changeDirectionGet, changeDirection, shieldAndResistGet, shieldAndResist, ballHandleGet, ballHandle;
 	playerName = document.getElementById("playerName").value;
 	accuracyShortPasses = document.getElementById("accuracyShortPasses").value;
 	accuracyLongPasses = document.getElementById("accuracyLongPasses").value;
 	accuracyTakeOns = document.getElementById("accuracyTakeOns").value;
 	
-	playersNames.push(playerName);
+	helpMoveGet = document.getElementsByName("helpMove");
+    changeDirectionGet = document.getElementsByName("changeDirection");
+	shieldAndResistGet = document.getElementsByName("shieldAndResist");
+	ballHandleGet = document.getElementsByName("ballHandle");
 	
-	alert(playerName + " " + accuracyShortPasses + " " + accuracyLongPasses + " " + accuracyTakeOns);
+	for(var i = 0; i < helpMoveGet.length; i++){
+	if(helpMoveGet[i].checked){
+    helpMove = helpMoveGet[i].value;
+	}
+	}
+	for(var i = 0; i < changeDirectionGet.length; i++){
+	if(changeDirectionGet[i].checked){
+    changeDirection = changeDirectionGet[i].value;
+	}
+	}
+	for(var i = 0; i < shieldAndResistGet.length; i++){
+	if(shieldAndResistGet[i].checked){
+    shieldAndResist = shieldAndResistGet[i].value;
+	}
+	}
+	for(var i = 0; i < ballHandleGet.length; i++){
+	if(ballHandleGet[i].checked){
+    ballHandle = ballHandleGet[i].value;
+	}
+	}
+	players.push(playerName);
 	
+	alert(playerName + " " + accuracyShortPasses + " " + accuracyLongPasses + " " + accuracyTakeOns + " " + helpMove + " " + changeDirection + " " + shieldAndResist + " " + ballHandle);
+	
+}
+
+function addCoachStats() { 
+	var coachName, possessionPorcentageTeam;
+	coachName = document.getElementById("coachName").value;
+	possessionPorcentageTeam = document.getElementById("possessionPorcentageTeam").value;
+	
+	alert(coachName + " " + possessionPorcentageTeam);
 }
