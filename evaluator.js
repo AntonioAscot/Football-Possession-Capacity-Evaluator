@@ -1,8 +1,9 @@
 var players = [];
+var coachs = [];
 var playersPossessionNumber; //player possession number is the number that represents the sum and pairy of the stats.
 
 function addPlayerStats(){
-	var playerName, accuracyShortPasses, accuracyLongPasses, accuracyTakeOns, helpMoveGet, helpMove, changeDirectionGet, changeDirection, shieldAndResistGet, shieldAndResist, ballHandleGet, ballHandle;
+	var playerName, playerPossessionNumber, accuracyShortPasses, accuracyLongPasses, accuracyTakeOns, helpMoveGet, helpMove, changeDirectionGet, changeDirection, shieldAndResistGet, shieldAndResist, ballHandleGet, ballHandle;
 	playerName = document.getElementById("playerName").value;
 	accuracyShortPasses = document.getElementById("accuracyShortPasses").value;
 	accuracyLongPasses = document.getElementById("accuracyLongPasses").value;
@@ -30,9 +31,10 @@ function addPlayerStats(){
 	}
 	for(var i = 0; i < ballHandleGet.length; i++){
 	if(ballHandleGet[i].checked){
-    ballHandle = ballHandleGet[i].value;
+    
 	}
 	}
+	playerPossessionNumber = 0;
 	players.push(playerName);
 	
 	alert(playerName + " " + accuracyShortPasses + " " + accuracyLongPasses + " " + accuracyTakeOns + " " + helpMove + " " + changeDirection + " " + shieldAndResist + " " + ballHandle);
@@ -46,3 +48,6 @@ function addCoachStats() {
 	
 	alert(coachName + " " + possessionPorcentageTeam);
 }
+
+var listElement = document.querySelector('#addList ul');
+var buttonElement = document.querySelector('#addList button');
