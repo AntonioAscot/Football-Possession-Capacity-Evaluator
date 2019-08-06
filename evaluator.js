@@ -42,11 +42,6 @@ function addPlayerSelectStats()
 	var cbballHandle = document.getElementById("ballHandle");
 	players.ballHandle[countingPlayer] = cbballHandle.options[cbballHandle.selectedIndex].text;
 
-
-	console.log(players.helpMove[countingPlayer]);
-	console.log(players.changeDirection[countingPlayer]);
-	console.log(players.shieldAndResis[countingPlayer]);
-	console.log(players.ballHandle[countingPlayer]);
 }
 
 function addCoachStats()
@@ -55,4 +50,10 @@ function addCoachStats()
 	coachs.possessionPorcentageTeam[countingCoach] = document.getElementById("possessionPorcentageTeam").value;
 	coachs.coachId[countingCoach] = countingCoach;
 	countingCoach++;
+}
+
+function submit(){
+	addPlayerPercentageStats();
+	addPlayerSelectStats();
+	addCoachStats();
 }
