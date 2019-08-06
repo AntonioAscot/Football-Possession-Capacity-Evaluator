@@ -7,13 +7,15 @@ var players = {
 	changeDirection: [], 
 	shieldAndResis: [],
 	ballHandle: [],
-	playerId: []
+	playerId: [],
+	playerPossessionCapacityNumber: []
 };
 
 var coachs = {
 	coachName: [],
 	possessionPorcentageTeam: [],
-	coachId: []
+	coachId: [],
+	coachPossessionCapacityNumber: []
 	
 };
 
@@ -55,5 +57,4 @@ function addCoachStats()
 function submit(){
 	addPlayerPercentageStats();
 	addPlayerSelectStats();
-	addCoachStats();
 }
