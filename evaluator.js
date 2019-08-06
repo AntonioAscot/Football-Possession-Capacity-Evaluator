@@ -28,7 +28,7 @@ function addPlayerPercentageStats()
 	players.accuracyLongPasses[countingPlayer] = document.getElementById("accuracyLongPasses").value;
 	players.accuracyTakeOns[countingPlayer] = document.getElementById("accuracyTakeOns").value;
 	players.playerId[countingPlayer] = countingPlayer;
-	counting++;
+	countingPlayer++;
 }
 
 function addPlayerSelectStats()
