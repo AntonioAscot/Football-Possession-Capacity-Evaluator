@@ -43,6 +43,7 @@ function addPlayerSelectStats()
 	players.shieldAndResis[countingPlayer] = cbshieldAndResist.options[cbshieldAndResist.selectedIndex].text;
 	var cbballHandle = document.getElementById("ballHandle");
 	players.ballHandle[countingPlayer] = cbballHandle.options[cbballHandle.selectedIndex].text;
+	
 
 }
 
