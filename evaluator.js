@@ -23,7 +23,6 @@ var countingPlayer = 0;
 function addPlayerPercentageStats()
 {//also add the name info
 	
-<<<<<<< HEAD
 	players.playerName[countingPlayer] = document.getElementById("playerName").value;
 	players.accuracyShortPasses[countingPlayer] = document.getElementById("accuracyShortPasses").value;
 	players.accuracyLongPasses[countingPlayer] = document.getElementById("accuracyLongPasses").value;
@@ -32,14 +31,6 @@ function addPlayerPercentageStats()
 	
 
 	counting++;
-=======
-	players.playerName[counting] = document.getElementById("playerName").value;
-	players.accuracyShortPasses[counting] = document.getElementById("accuracyShortPasses").value;
-	players.accuracyLongPasses[counting] = document.getElementById("accuracyLongPasses").value;
-	players.accuracyTakeOns[counting] = document.getElementById("accuracyTakeOns").value;
-	counting++;
-	
->>>>>>> 0e5d1dc1e742de860c7ce050315aa19096575476
 }
 
 function addPlayerRadioStats()
