@@ -28,32 +28,12 @@ function addPlayerPercentageStats()
 	players.accuracyLongPasses[countingPlayer] = document.getElementById("accuracyLongPasses").value;
 	players.accuracyTakeOns[countingPlayer] = document.getElementById("accuracyTakeOns").value;
 	players.playerId[countingPlayer] = countingPlayer;
-	
-
 	counting++;
 }
 
 function addPlayerRadioStats()
 {
-	for (var i = 0; i < 4; i++)
-	{
-		if (i == 0)
-		{
-			
-		} 
-		if (i == 1)
-		{
-			
-		}
-		if (i == 2)
-		{
-			
-		}
-		if (i == 4)
-		{
-			
-		}
-	}
+
 }
 
 function addCoachStats()
@@ -61,6 +41,5 @@ function addCoachStats()
 	coachs.coachName[countingCoach] = document.getElementById("coachName").value;
 	coachs.possessionPorcentageTeam[countingCoach] = document.getElementById("possessionPorcentageTeam").value;
 	coachs.coachId[countingCoach] = countingCoach;
-
 	countingCoach++;
 }
