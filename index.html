@@ -48,32 +48,32 @@ There will be two parts: 1) Players stats; 2) Coach stats.
   <input type="number" name="accuracyTakeOns" id="accuracyTakeOns" " min="0" max="100" required><br>
   
   <P>This player use to play next to his/her teammates and help them in the teamwork passing? </p>
-  <ul>
-  <li><input type="radio" name="helpMove" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="helpMove" value="no"> No <br></li>
-  <li><input type="radio" name="helpMove" value="sometimes"> Sometimes <br><br></li>
-  </ul>
+  <select id="helpMove">
+    <option>Yes</option>
+    <option>No</option>
+    <option>Sometimes</option>
+  </select>
   
   <P>This player has a good capacity of changing of direction? </p>
-  <ul>
-  <li><input type="radio" name="changeDirection" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="changeDirection" value="no"> No <br></li>
-  <li><input type="radio" name="changeDirection" value="sometimes"> Somewhat <br><br></li>
-  </ul>
+  <select id="changeDirection">
+    <option>Yes</option>
+    <option>No</option>
+    <option>Somewhat</option>
+  </select>
   
   <P>This player has a good capacity to shield the ball and resist the adversary's pressing? </p>
-  <ul>
-  <li><input type="radio" name="shieldAndResist" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="shieldAndResist" value="no"> No <br></li>
-  <li><input type="radio" name="shieldAndResist" value="sometimes"> Somewhat <br><br></li>
-  </ul>
+  <select id="shieldAndResist">
+    <option>Yes</option>
+    <option>No</option>
+    <option>Somewhat</option>
+  </select>
   
-    <P>This player has a good ball handling? </p>
-  <ul>
-  <li><input type="radio" name="ballHandle" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="ballHandle" value="no"> No <br></li>
-  <li><input type="radio" name="ballHandle" value="sometimes"> Somewhat <br><br></li>
-  </ul>
+  <P>This player has a good ball handling? </p>
+  <select id="ballHandle">
+    <option>Yes</option>
+    <option>No</option>
+    <option>Somewhat</option>
+  </select>
   <input type="button" value="Submit" onclick="addPlayerPercentageStats()">
   
   <h4> Second part: Coach stats </h4>
