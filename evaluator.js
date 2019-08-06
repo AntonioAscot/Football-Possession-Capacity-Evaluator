@@ -28,7 +28,7 @@ function addPlayerPercentageStats()
 	players.accuracyLongPasses[countingPlayer] = document.getElementById("accuracyLongPasses").value;
 	players.accuracyTakeOns[countingPlayer] = document.getElementById("accuracyTakeOns").value;
 	players.playerId[countingPlayer] = countingPlayer;
-	counting++;
+	countingPlayer++;
 }
 
 function addPlayerSelectStats()
@@ -41,6 +41,12 @@ function addPlayerSelectStats()
 	players.shieldAndResis[countingPlayer] = cbshieldAndResist.options[cbshieldAndResist.selectedIndex].text;
 	var cbballHandle = document.getElementById("ballHandle");
 	players.ballHandle[countingPlayer] = cbballHandle.options[cbballHandle.selectedIndex].text;
+
+
+	console.log(players.helpMove[countingPlayer]);
+	console.log(players.changeDirection[countingPlayer]);
+	console.log(players.shieldAndResis[countingPlayer]);
+	console.log(players.ballHandle[countingPlayer]);
 }
 
 function addCoachStats()
