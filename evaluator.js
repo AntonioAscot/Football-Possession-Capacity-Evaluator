@@ -29,6 +29,7 @@ function addPlayerPercentageStats()
 	players.accuracyTakeOns[counting] = document.getElementById("accuracyTakeOns").value;
 	counting++;
 	
+	
 }
 
 function addPlayerRadioStats()
