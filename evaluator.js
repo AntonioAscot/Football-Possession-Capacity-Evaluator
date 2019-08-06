@@ -31,8 +31,16 @@ function addPlayerPercentageStats()
 	counting++;
 }
 
-function addPlayerRadioStats()
+function addPlayerSelectStats()
 {
+	var cbHelpMove = document.getElementById("helpMove");
+	players.helpMove[countingPlayer] = cbHelpMove.options[cbHelpMove.selectedIndex].text;
+	var cbchangeDirection = document.getElementById("changeDirection");
+	players.changeDirection[countingPlayer] = cbchangeDirection.options[cbchangeDirection.selectedIndex].text;	
+	var cbshieldAndResist = document.getElementById("shieldAndResist");
+	players.shieldAndResis[countingPlayer] = cbshieldAndResist.options[cbshieldAndResist.selectedIndex].text;
+	var cbballHandle = document.getElementById("ballHandle");
+	players.ballHandle[countingPlayer] = cbballHandle.options[cbballHandle.selectedIndex].text;
 }
 
 function addCoachStats()
