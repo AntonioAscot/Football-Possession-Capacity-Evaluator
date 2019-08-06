@@ -33,7 +33,6 @@ function addPlayerPercentageStats()
 
 function addPlayerRadioStats()
 {
-
 }
 
 function addCoachStats()
