@@ -48,46 +48,77 @@ There will be two parts: 1) Players stats; 2) Coach stats.
   <input type="number" name="accuracyTakeOns" id="accuracyTakeOns" " min="0" max="100" required><br>
   
   <P>This player use to play next to his/her teammates and help them in the teamwork passing? </p>
-  <ul>
-  <li><input type="radio" name="helpMove" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="helpMove" value="no"> No <br></li>
-  <li><input type="radio" name="helpMove" value="sometimes"> Sometimes <br><br></li>
-  </ul>
-  
+  <select id="helpMove">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+  </select>
+    
   <P>This player has a good capacity of changing of direction? </p>
-  <ul>
-  <li><input type="radio" name="changeDirection" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="changeDirection" value="no"> No <br></li>
-  <li><input type="radio" name="changeDirection" value="sometimes"> Somewhat <br><br></li>
-  </ul>
-  
+  <select id="changeDirection">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+  </select>
+    
   <P>This player has a good capacity to shield the ball and resist the adversary's pressing? </p>
-  <ul>
-  <li><input type="radio" name="shieldAndResist" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="shieldAndResist" value="no"> No <br></li>
-  <li><input type="radio" name="shieldAndResist" value="sometimes"> Somewhat <br><br></li>
-  </ul>
-  
-    <P>This player has a good ball handling? </p>
-  <ul>
-  <li><input type="radio" name="ballHandle" value="yes" checked> Yes <br></li>
-  <li><input type="radio" name="ballHandle" value="no"> No <br></li>
-  <li><input type="radio" name="ballHandle" value="sometimes"> Somewhat <br><br></li>
-  </ul>
-  <input type="button" value="Submit">
-  
+  <select id="shieldAndResist">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+  </select>
+    
+  <P>This player has a good ball handling? </p>
+  <select id="ballHandle">
+	<option>1</option>
+    <option>2</option>
+    <option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+  </select>
+  <input type="button" value="Submit" onclick="submit()">
+    
   <h4> Second part: Coach stats </h4>
-<p> Enter the name and the stats of the most recent team mannaged by the coach </p><br>
+  <p> Enter the name and the stats of the most recent team mannaged by the coach </p><br>
 
 	<p>Coach name:<p>
     <input type="text" name="coachName"  id="coachName" required><br>
 	<p> What is the Possession percentage of the most recent team mannaged by the coach? </p>
 	<input type="number" name="possessionPorcentageTeam" id="possessionPorcentageTeam" value="" min="0" max="100" required><br><br>
 	
-	<input type="button" value="Submit">
+	<input type="button" value="Submit" onclick="addCoachStats()">
 </form>
 </div>
 
+<div class="playerList">
+<ul></ul>
+</div>
 
 
 
